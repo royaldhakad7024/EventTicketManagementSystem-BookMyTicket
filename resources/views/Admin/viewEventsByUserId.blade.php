@@ -68,11 +68,11 @@
                                         <table class="table align-items-center mb-0 w-100">
                                             <thead class="bg-gray-100">
                                                 <tr>
-                                                    <th class="align-middle ps-5 "><a href="{{ route('ticket-management', [$id, 'sort_by' => 'name']) }}">Name</a></th>
-                                                    <th class="align-middle text-center "><a href="{{ route('ticket-management', [$id, 'sort_by' => 'venue']) }}">Venue</a></th>
-                                                    <th class="align-middle text-center "><a href="{{ route('ticket-management', [$id, 'sort_by' => 'time']) }}">Time</a></th>
-                                                    <th class="align-middle text-center "><a href="{{ route('ticket-management', [$id, 'sort_by' => 'date']) }}">Date</a></th>
-                                                    <th class="align-middle text-center "><a href="{{ route('ticket-management', [$id, 'sort_by' => 'price']) }}">Price</a></th>
+                                                    <th class="align-middle ps-5 "><a class="text-dark" style="text-decoration: none;" href="{{ route('ticket-management', [$id, 'sort_by' => 'name']) }}">Name</a></th>
+                                                    <th class="align-middle text-center "><a class="text-dark" style="text-decoration: none;" href="{{ route('ticket-management', [$id, 'sort_by' => 'venue']) }}">Venue</a></th>
+                                                    <th class="align-middle text-center "><a class="text-dark" style="text-decoration: none;" href="{{ route('ticket-management', [$id, 'sort_by' => 'time']) }}">Time</a></th>
+                                                    <th class="align-middle text-center "><a class="text-dark" style="text-decoration: none;" href="{{ route('ticket-management', [$id, 'sort_by' => 'date']) }}">Date</a></th>
+                                                    <th class="align-middle text-center "><a class="text-dark" style="text-decoration: none;" href="{{ route('ticket-management', [$id, 'sort_by' => 'price']) }}">Price</a></th>
                                                     <th class="align-middle text-center">Created at</th>
                                                     <th class="align-middle text-center ">Action</th>
                                                 </tr>

@@ -74,13 +74,13 @@
                                     <tr>
                                         <th
                                             class="text-center text-uppercase font-weight-bold bg-transparent border-bottom text-secondary">
-                                            <a href="{{ route('users-management', ['sort_by' => 'id']) }}">ID</a></th>
+                                            <a class="text-dark" style="text-decoration: none;" href="{{ route('users-management', ['sort_by' => 'id']) }}">ID</a></th>
                                         <th
                                             class="text-center text-uppercase font-weight-bold bg-transparent border-bottom text-secondary">
                                             Photo</th>
                                         <th
                                             class="text-center text-uppercase font-weight-bold bg-transparent border-bottom text-secondary">
-                                            <a href="{{ route('users-management', ['sort_by' => 'name']) }}">name</a></th>
+                                            <a class="text-dark" style="text-decoration: none;" href="{{ route('users-management', ['sort_by' => 'name']) }}">name</a></th>
                                         <th
                                             class="text-center text-uppercase font-weight-bold bg-transparent border-bottom text-secondary">Email</th>
                                         <th
