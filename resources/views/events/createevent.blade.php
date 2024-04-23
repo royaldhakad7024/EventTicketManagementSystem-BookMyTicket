@@ -1,5 +1,8 @@
 <x-app-layout>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
         <div class="container-fluid mt-4 px-4 pb-0">
             {{-- Start of Header Card  --}}
             <div class="row">
@@ -72,6 +75,7 @@
                                             <label for="date">Event Date *</label>
                                             <input type="text" name="date" id="date" class="form-control"
                                                 value="{{ old('date') }}">
+
                                         </div>
                                         @error('date')
                                             <span class="text-danger text-sm">{{ $message }}</span>
@@ -146,12 +150,11 @@
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js'></script>
     <script>
-        // jQuery for DatePicker 
-        $(document).ready(function() {
-            $('#date').datepicker({
-                showOtherMonths: true,
-                minDate: new Date() // Disable previous dates
-            });
+        // Initialize Flatpickr
+        flatpickr("#date", {
+            enableTime: false, // Disable time selection
+            dateFormat: "Y-m-d", // Date format
+            minDate: "today" // Disable previous dates
         });
     </script>
 </x-app-layout>
